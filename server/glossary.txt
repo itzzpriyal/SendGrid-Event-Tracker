@@ -1,0 +1,27 @@
+@index.js
+meaning of ()=> 
+
+A callback function | ()=> |is a function that you pass as an argument to another function, and that other function will call (execute) your callback at a certain point, usually after completing some task.
+
+Explanation :
+Imagine you give someone instructions to do something for you, and you tell them, "Once you finish, please call me back."
+
+In programming, the "CALL ME BACK" part is the callback function — it's a piece of code you provide to be run later, often after some work is done.
+
+Why use callbacks?
+They allow you to run code after another function finishes its job.
+
+This is especially useful for asynchronous tasks like waiting for a server response, reading a file, or connecting to a database,
+ where you don’t want your program to stop and wait but instead continue and handle the result later
+
+Types of callbacks:
+
+=> Synchronous	    Immediately during the outer function	Array methods like .map() or .forEach()
+=> Asynchronous  	After some time or event finishes       setTimeout(), Promise.then(), database connection callbacks
+
+
+@package.json
+
+in scripts 
+ "type" : "module" // when we use import then we write "type" : "module" here
+ "start" : "nodemon index.js"   //scripts is basically like a typedef so whenever we want to write nodemon index.js we will write (start) there
